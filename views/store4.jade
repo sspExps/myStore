@@ -1,0 +1,18 @@
+doctype html
+html
+	head
+		title= Analytics
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv="refresh",content="10")
+		link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+		link(rel='stylesheet', href='/stylesheets/store.css')
+		block head
+	body
+		.container-fluid
+			div#type
+			block content
+			script(src='/javascripts/jquery-2.2.0.min.js')
+			script(src='/javascripts/bootstrap.min.js')
+			script(src='/javascripts/store.js')
+			script
+				$('#type').typer(["Today's Special", 'Free Frys4', 'IN<i>&</i> AS', 'Our Movie' ]);
