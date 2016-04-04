@@ -8,11 +8,19 @@ html
 		link(rel='stylesheet', href='/stylesheets/store.css')
 		block head
 	body
-		.container-fluid
+		.container-fluid.no-padding
 			div#type
+			div#weather.col-md-6.col-md-offset-3.col-sm-12.col-xs-12.no-padding
+				a.aw-widget-legal(href='http://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727')
+				#awcc1459736931922.aw-widget-current(data-locationkey='', data-unit='f', data-language='en-us', data-useip='true', data-uid='awcc1459736931922')
+			
+			div#menu-scroll
+
 			block content
 			script(src='/javascripts/jquery-2.2.0.min.js')
 			script(src='/javascripts/bootstrap.min.js')
 			script(src='/javascripts/store.js')
+			script(type='text/javascript', src='http://oap.accuweather.com/launch.js')
+
 			script
-				$('#type').typer(["Today's Special", 'Free Burgers', 'Free Fries']);
+				//$('#type').typer(["Today's Special", 'Free Frys', 'IN<i>&</i> AS', 'Our Movie' ]);

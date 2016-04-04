@@ -40,3 +40,9 @@ $.fn.typer = function(text, options){
 };
 
            
+$(document).ready(function(){
+    $("#menu-scroll").height($(document).height()-200);
+    $(window).resize(function(){
+        $("#menu-scroll").height($(document).height()-200);
+    });
+});
